@@ -1,0 +1,20 @@
+<div class="container text-center">
+
+  <article>
+    <h3>Gerando QRcode</h3>
+    <div class="container">
+      <app-qr-form (qrAdicionado)="aoAdicionar($event)"></app-qr-form>
+      <br><br>
+      <div class="row">
+        <div class="col-auto mt-3" *ngFor="let qrcode of qrcodes">
+          <app-qr-card [qr]="qrcode"></app-qr-card>
+          <!--Fazendo propeting-binding de qr-->
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <div class="card-footer text-muted">
+    By Jacó Miranda - All Right Reserved
+  </div>
+</div>

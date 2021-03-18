@@ -1,0 +1,8 @@
+
+<div class="card ">   <!-- Esse card vai para o funcionario-card -->
+  <!-- <img src="https://randomuser.me/api/portraits/men/{{funcionario.id}}.jpg" width="80rem" alt=""> -->
+  <div class="card-aling ">{{qr.descricao}}</div>
+  <ngx-qrcode [elementType]="qr.elementType" [value]="qr.valor"></ngx-qrcode>
+
+  <div class="card-aling ">{{qr.valor}}</div>
+</div>
